@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Encriptador-Challenge</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <header>
+            <img src="Logo.png" alt="Logo alura">
+        </header>
+        <main>
+            <div class="mensaje">
+                <input type="text" id="mensaje" placeholder="Ingrese el texto aqui">
+                <p><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-alert-circle" width="12" height="12" viewBox="0 0 24 24" stroke-width="1.5" stroke="#495057" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <circle cx="12" cy="12" r="9" />
+                    <line x1="12" y1="8" x2="12" y2="12" />
+                    <line x1="12" y1="16" x2="12.01" y2="16" />
+                  </svg>Solo letras minusculas y sin acentos</p>
+                <button id="encriptar" onclick="encriptar()">Encriptar</button>
+                <button id="desencriptar" onclick="desencriptar()">Desencriptar</button>
+            </div>
+
+            <div class="resultado">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-file-search" id="imag"width="88" height="88" viewBox="0 0 24 24" stroke-width="1.5" stroke="#0A3871" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M14 3v4a1 1 0 0 0 1 1h4" />
+                    <path d="M12 21h-5a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v4.5" />
+                    <circle cx="16.5" cy="17.5" r="2.5" />
+                    <line x1="18.5" y1="19.5" x2="21" y2="22" />
+                  </svg>
+                <input type="text" id="resultado" placeholder="Resultado de lo pedido...">
+                <button id="copiar" onclick="copiar()">Copiar</button>
+                <script type="text/javascript" src="script.js"></script>
+            </div>
+            <footer>
+                <p>Sitio web desarrollado por: Adrián Palma</p>
+            </footer>
+        </main>
+    </body>
+</html>
